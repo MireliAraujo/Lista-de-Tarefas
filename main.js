@@ -10,7 +10,7 @@ $(document).ready(function() {
         
     });
 
-    $('ul').on("click", (function () {
-        $('li').css({"text-decoration":"line-through"});
+    $('ul').on("click", "li", (function () {
+        $(this).css({"text-decoration":"line-through"});
     }));
 });
